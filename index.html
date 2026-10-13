@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>XO Casino</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/video/fishman.mp4" as="video" type="video/mp4" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ============ Decorative page background (Figma: Background) ============ -->
+  <div class="page-bg" aria-hidden="true">
+    <img class="page-bg__blurs" src="assets/img/bg-blurs.svg" alt="" />
+    <img class="page-bg__blurs-m" src="assets/img/m-bg-blurs.svg" alt="" />
+
+    <div class="bg-decor">
+      <!-- net-2 (top left) -->
+      <i class="ln ln--h" style="left:174.6px;top:-5.92px;width:894.4px;height:1.22px"></i>
+      <i class="ln ln--h" style="left:-38px;top:141px;width:973px;height:2px"></i>
+      <i class="ln ln--h" style="left:-297px;top:289.23px;width:1025.3px;height:0.813px"></i>
+      <i class="ln ln--h" style="left:145.32px;top:436.4px;width:461px;height:0.813px"></i>
+      <i class="ln ln--v" style="left:375.43px;top:-162.03px;width:1.626px;height:861px"></i>
+      <i class="ln ln--v ln--dim" style="left:214.44px;top:-162.03px;width:1.626px;height:678px"></i>
+      <i class="fl" style="left:343.25px;top:123.36px;width:67.96px;height:37.59px"></i>
+      <i class="fl fl--half" style="left:214.25px;top:274.6px;width:27.3px;height:30.08px"></i>
+      <i class="fl fl--rot" style="left:203.68px;top:270.53px;width:21.59px;height:39.03px"></i>
+      <i class="fl fl--half fl--rot" style="left:359.17px;top:407.13px;width:33.34px;height:30.08px"></i>
+
+      <!-- net-1 (left) -->
+      <i class="ln ln--h" style="left:36px;top:869px;width:1100px;height:1.5px"></i>
+      <i class="ln ln--h" style="left:-225px;top:1050px;width:1361px;height:2px"></i>
+      <i class="ln ln--h" style="left:-544px;top:1232px;width:1261px;height:1px"></i>
+      <i class="ln ln--h" style="left:0;top:1413px;width:567px;height:1px"></i>
+      <i class="ln ln--v" style="left:283px;top:677px;width:2px;height:1059px"></i>
+      <i class="ln ln--v ln--dim" style="left:85px;top:677px;width:2px;height:834px"></i>
+      <i class="fl" style="left:243px;top:1028px;width:83.16px;height:46px"></i>
+      <i class="fl fl--half" style="left:86px;top:1214px;width:33px;height:37px"></i>
+      <i class="fl fl--rot" style="left:73px;top:1209px;width:26.55px;height:48px"></i>
+      <i class="fl fl--half fl--rot" style="left:263px;top:1377px;width:41px;height:37px"></i>
+      <i class="fl" style="left:419px;top:855px;width:52.43px;height:29px"></i>
+      <i class="fl fl--rot" style="left:431px;top:844px;width:28.76px;height:52px"></i>
+
+      <!-- net-4 (left, lower) -->
+      <i class="ln ln--h" style="left:37px;top:1983px;width:1100px;height:1.5px"></i>
+      <i class="ln ln--h" style="left:-224px;top:2164px;width:1361px;height:2px"></i>
+      <i class="ln ln--h" style="left:1px;top:2346px;width:567px;height:1px"></i>
+      <i class="ln ln--h" style="left:1px;top:2527px;width:567px;height:1px"></i>
+      <i class="ln ln--v" style="left:284px;top:1791px;width:2px;height:1059px"></i>
+      <i class="ln ln--v ln--dim" style="left:86px;top:1791px;width:2px;height:834px"></i>
+      <i class="fl" style="left:426px;top:1972px;width:37.97px;height:21px"></i>
+      <i class="fl fl--half" style="left:252px;top:2147px;width:33px;height:37px"></i>
+      <i class="fl fl--rot" style="left:272px;top:2141px;width:26.55px;height:48px"></i>
+
+      <!-- net-3 (right, anchored to the right edge) -->
+      <i class="ln ln--h" style="right:-351px;top:650px;width:1261px;height:1px"></i>
+      <i class="ln ln--h" style="right:-79px;top:851px;width:670px;height:2px"></i>
+      <i class="ln ln--h" style="right:3px;top:1075px;width:156px;height:2px"></i>
+      <i class="ln ln--v" style="right:81px;top:534px;width:2px;height:864px"></i>
+      <i class="ln ln--v ln--dim" style="right:279px;top:372px;width:2px;height:834px"></i>
+      <i class="fl fl--half fl--rot" style="right:76.25px;top:852px;width:12.75px;height:21px"></i>
+      <i class="fl" style="right:81px;top:1063px;width:26px;height:26px"></i>
+
+      <i class="ln ln--h" style="right:-1px;top:1699px;width:298px;height:2px"></i>
+      <i class="ln ln--h" style="right:-433px;top:1880px;width:670px;height:2px"></i>
+      <i class="ln ln--h" style="right:-752px;top:2062px;width:1261px;height:1px"></i>
+      <i class="ln ln--h" style="right:-208px;top:2243px;width:567px;height:1px"></i>
+      <i class="ln ln--v" style="right:75px;top:1315px;width:2px;height:1251px"></i>
+      <i class="ln ln--v ln--dim" style="right:-123px;top:1507px;width:2px;height:834px"></i>
+      <i class="fl" style="right:35.84px;top:1858px;width:83.16px;height:46px"></i>
+      <i class="fl fl--rot" style="right:63.45px;top:1676px;width:26.55px;height:48px"></i>
+      <i class="fl fl--half fl--rot" style="right:55px;top:2207px;width:41px;height:37px"></i>
+
+      <!-- floating X / O / present -->
+      <img class="deco" src="assets/img/bg-o-1.png" alt="" style="left:388px;top:618px;width:229px;height:219px;filter:blur(10px)" />
+      <img class="deco" src="assets/img/bg-x-1.png" alt="" style="right:80px;top:1250px;width:327px;height:309px;filter:blur(10px)" />
+      <img class="deco" src="assets/img/bg-o-2.png" alt="" style="right:-113px;top:2398px;width:296px;height:301px;filter:blur(6px)" />
+      <img class="deco" src="assets/img/bg-x-2.png" alt="" style="left:-66.9px;top:1588.1px;width:295px;height:258.13px;filter:blur(6px);transform:rotate(-37.49deg)" />
+      <img class="deco deco--present" src="assets/img/bg-present.png" alt="" style="right:-116.7px;top:458.9px;width:206.23px;height:212.68px;filter:blur(3px);transform:rotate(-152.44deg) scaleY(-1)" />
+    </div>
+    <div class="page-bg__noise"></div>
+  </div>
+
+  <!-- ============ Header (Figma: Element - Header) ============ -->
+  <header class="header">
+    <div class="header__group">
+      <button class="header__menu" type="button" aria-label="Open menu" aria-expanded="false" data-sidebar-toggle>
+        <img class="only-desktop header__menu-ico" src="assets/icons/menu.svg" width="40" height="40" alt="" />
+        <img class="only-desktop header__menu-ico header__menu-ico--hover" src="assets/icons/menu-hover.svg" alt="" />
+        <img class="only-mobile header__menu-ico" src="assets/icons/m-menu.svg" width="36" height="36" alt="" />
+        <img class="only-mobile header__menu-ico header__menu-ico--hover" src="assets/icons/m-menu-hover.svg" alt="" />
+        <span class="header__close" aria-hidden="true"><img class="only-desktop" src="assets/icons/close.svg" width="32" height="32" alt="" /><img class="only-mobile" src="assets/icons/m-close.svg" width="24" height="24" alt="" /></span>
+      </button>
+      <a class="logo" href="#" aria-label="XO Casino">
+        <img class="only-desktop" src="assets/img/logo.svg" width="180" height="48" alt="XO Casino" />
+        <img class="only-mobile" src="assets/img/logo-m.svg" width="112" height="30" alt="XO Casino" />
+      </a>
+      <a class="btn-bonuses" href="#">
+        <img src="assets/icons/bonus.svg" width="32" height="32" alt="" />
+        <span>Bonuses</span>
+        <span class="count">3</span>
+      </a>
+    </div>
+
+    <!-- logged-in state (desktop design) -->
+    <div class="header__group header__user">
+      <a class="icon-btn icon-btn--md hide-tablet" href="#" aria-label="Notifications">
+        <img src="assets/icons/notification.svg" width="32" height="32" alt="" />
+        <span class="count">3</span>
+      </a>
+      <a class="icon-btn icon-btn--md hide-tablet" href="#" aria-label="Games"><img src="assets/icons/gamepad.svg" width="32" height="32" alt="" /></a>
+      <a class="icon-btn icon-btn--md hide-tablet" href="#" aria-label="Bonus wheel"><img src="assets/icons/settings.svg" width="32" height="32" alt="" /></a>
+      <div class="wallet">
+        <span class="wallet__balance">€ 9999.99</span>
+        <a class="btn-primary btn-primary--sm" href="#">Deposit</a>
+      </div>
+      <a class="icon-btn icon-btn--md" href="#" aria-label="Profile"><img src="assets/icons/user.svg" width="32" height="32" alt="" /></a>
+    </div>
+
+    <!-- logged-out state (mobile design) -->
+    <div class="header__group header__guest">
+      <a class="btn-outline" href="#">Log in</a>
+      <a class="btn-primary btn-primary--xs" href="#">Sign up</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- ============ Side menu (Figma: Side-menu) ============ -->
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <div class="side-group">
+        <button class="side-item side-item--accordion" type="button" aria-expanded="true" data-accordion>
+          <img src="assets/icons/slots.svg" width="32" height="32" alt="" />
+          <span>Slots</span>
+          <span class="ico side-item__chevron" style="--w:16px;--h:8px;--i:-6.25% -3.13%"><img src="assets/icons/chevron-down.svg" alt="" /></span>
+        </button>
+        <ul class="side-sub">
+          <li><a class="side-sub__item" href="#"><span class="ico" style="--i:-23.21% -30.36% -37.5% -30.36%"><img src="assets/icons/all-games.svg" alt="" /></span>All Games</a></li>
+          <li><a class="side-sub__item" href="#"><span class="ico" style="--i:-31.03% -24.11% -45.31% -24.11%"><img src="assets/icons/new-slots.svg" alt="" /></span>New Slots</a></li>
+          <li><a class="side-sub__item" href="#"><span class="ico" style="--i:-31.03% -24.11% -45.31% -24.11%"><img src="assets/icons/hot-slots.svg" alt="" /></span>Hot Slots</a></li>
+          <li><a class="side-sub__item" href="#" aria-current="page"><span class="ico" style="--i:-23.21% -42.86% -37.5% -39.73%"><img src="assets/icons/popular-slots.svg" alt="" /></span>Popular Slots</a></li>
+          <li><a class="side-sub__item" href="#"><span class="ico" style="--i:-32.59% -41.29% -46.88% -41.29%"><img src="assets/icons/table-games-sm.svg" alt="" /></span>Table Games</a></li>
+          <li><a class="side-sub__item" href="#"><span class="ico" style="--i:-32.59% -39.73% -46.88% -39.73%"><img src="assets/icons/roulette.svg" alt="" /></span>Roulette</a></li>
+          <li><a class="side-sub__item" href="#"><span class="ico" style="--i:-32.59% -39.73% -46.87% -39.73%"><img src="assets/icons/bonus-shop.svg" alt="" /></span>Bonus Shop</a></li>
+        </ul>
+      </div>
+      <a class="side-item" href="#"><img src="assets/icons/live-games.svg" width="32" height="32" alt="" /><span>Live-Games</span></a>
+      <a class="side-item" href="#"><img src="assets/icons/table-games.svg" width="32" height="32" alt="" /><span>Table Games</span></a>
+      <a class="side-item" href="#"><img src="assets/icons/crash.svg" width="32" height="32" alt="" /><span>Crash</span></a>
+      <a class="side-item" href="#"><img src="assets/icons/promotions.svg" width="32" height="32" alt="" /><span>Promotions</span></a>
+      <div class="side-divider" role="separator"></div>
+      <a class="side-item side-item--ghost" href="#"><img src="assets/icons/support.svg" width="32" height="32" alt="" /><span>Support</span></a>
+      <a class="side-item side-item--ghost" href="#"><img src="assets/icons/players-chat.svg" width="32" height="32" alt="" /><span>Players Chat</span></a>
+      <div class="socials">
+        <a class="social" href="#" aria-label="Telegram"><img src="assets/icons/telegram.svg" width="24" height="24" alt="" /></a>
+        <a class="social" href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" width="24" height="24" alt="" /></a>
+        <a class="social" href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" width="24" height="24" alt="" /></a>
+        <a class="social" href="#" aria-label="YouTube"><img src="assets/icons/youtube.svg" width="24" height="24" alt="" /></a>
+        <a class="social" href="#" aria-label="TikTok"><img src="assets/icons/tiktok.svg" width="24" height="24" alt="" /></a>
+      </div>
+    </aside>
+    <div class="sidebar-scrim" data-sidebar-close></div>
+
+    <main class="content">
+      <!-- ============ Hero slider ============ -->
+      <section class="hero" aria-roledescription="carousel" aria-label="Promotions" data-slider>
+        <div class="hero__viewport">
+          <div class="hero__track" data-slider-track>
+
+            <!-- Slide template: duplicate <article class="hero-slide"> to add a banner.
+                 --hero-fill = colour of the video's left edge (fills the area the video doesn't cover). -->
+            <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="1 of 3"
+                     style="--hero-fill: linear-gradient(180deg,#003c58 0%,#004665 25%,#004063 50%,#003152 62%,#002b49 75%,#002a3d 87%,#002537 100%)">
+              <div class="hero-slide__media">
+                <video class="hero-slide__video" src="assets/video/fishman.mp4" muted loop playsinline preload="auto"></video>
+              </div>
+              <div class="hero-slide__shade"></div>
+              <div class="hero-slide__content">
+                <h1 class="hero-slide__title">
+                  <span class="hero-slide__title-main">10 спинов<br /> на Big Bass Splash</span>
+                  <span class="hero-slide__title-accent">
+                    <span class="visually-hidden">За регистрацию, без депозита, без отыгрыша!</span>
+                    <span class="flip" data-flip aria-hidden="true">
+                      <span class="flip__item">За регистрацию</span>
+                      <span class="flip__item is-current">Без депозита!</span>
+                      <span class="flip__item">Без отыгрыша!</span>
+                    </span>
+                  </span>
+                </h1>
+                <div class="btn-glow hero-slide__cta">
+                  <img class="btn-glow__a" src="assets/img/blur-btn-a.svg" alt="" />
+                  <img class="btn-glow__b" src="assets/img/blur-btn-b.svg" alt="" />
+                  <a class="btn-primary btn-primary--lg" href="#">Зарегистрироваться</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PLACEHOLDER slides (same content) — only to demonstrate the pagination & arrows. Replace or delete. -->
+            <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 3"
+                     style="--hero-fill: linear-gradient(180deg,#003c58 0%,#004665 25%,#004063 50%,#003152 62%,#002b49 75%,#002a3d 87%,#002537 100%)">
+              <div class="hero-slide__media">
+                <video class="hero-slide__video" src="assets/video/fishman.mp4" muted loop playsinline preload="none"></video>
+              </div>
+              <div class="hero-slide__shade"></div>
+              <div class="hero-slide__content">
+                <h2 class="hero-slide__title">
+                  <span class="hero-slide__title-main">10 спинов<br /> на Big Bass Splash</span>
+                  <span class="hero-slide__title-accent">
+                    <span class="visually-hidden">За регистрацию, без депозита, без отыгрыша!</span>
+                    <span class="flip" data-flip aria-hidden="true">
+                      <span class="flip__item">За регистрацию</span>
+                      <span class="flip__item is-current">Без депозита!</span>
+                      <span class="flip__item">Без отыгрыша!</span>
+                    </span>
+                  </span>
+                </h2>
+                <div class="btn-glow hero-slide__cta">
+                  <img class="btn-glow__a" src="assets/img/blur-btn-a.svg" alt="" />
+                  <img class="btn-glow__b" src="assets/img/blur-btn-b.svg" alt="" />
+                  <a class="btn-primary btn-primary--lg" href="#">Зарегистрироваться</a>
+                </div>
+              </div>
+            </article>
+            <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 3"
+                     style="--hero-fill: linear-gradient(180deg,#003c58 0%,#004665 25%,#004063 50%,#003152 62%,#002b49 75%,#002a3d 87%,#002537 100%)">
+              <div class="hero-slide__media">
+                <video class="hero-slide__video" src="assets/video/fishman.mp4" muted loop playsinline preload="none"></video>
+              </div>
+              <div class="hero-slide__shade"></div>
+              <div class="hero-slide__content">
+                <h2 class="hero-slide__title">
+                  <span class="hero-slide__title-main">10 спинов<br /> на Big Bass Splash</span>
+                  <span class="hero-slide__title-accent">
+                    <span class="visually-hidden">За регистрацию, без депозита, без отыгрыша!</span>
+                    <span class="flip" data-flip aria-hidden="true">
+                      <span class="flip__item">За регистрацию</span>
+                      <span class="flip__item is-current">Без депозита!</span>
+                      <span class="flip__item">Без отыгрыша!</span>
+                    </span>
+                  </span>
+                </h2>
+                <div class="btn-glow hero-slide__cta">
+                  <img class="btn-glow__a" src="assets/img/blur-btn-a.svg" alt="" />
+                  <img class="btn-glow__b" src="assets/img/blur-btn-b.svg" alt="" />
+                  <a class="btn-primary btn-primary--lg" href="#">Зарегистрироваться</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Slider controls (auto-hidden when there is only one slide) -->
+        <div class="hero__pagination" role="tablist" aria-label="Choose slide" data-slider-dots></div>
+        <div class="hero__arrows">
+          <button class="hero__arrow" type="button" aria-label="Previous slide" data-slider-prev>
+            <img src="assets/icons/arrow-left.svg" width="40" height="40" alt="" />
+            <img class="hero__arrow-hover" src="assets/icons/arrow-left-hover.svg" alt="" />
+          </button>
+          <button class="hero__arrow" type="button" aria-label="Next slide" data-slider-next>
+            <img src="assets/icons/arrow-right.svg" width="40" height="40" alt="" />
+            <img class="hero__arrow-hover" src="assets/icons/arrow-right-hover.svg" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <!-- ============ Providers / tabs / search (Figma: Providers/Search) ============ -->
+      <div class="filters">
+        <div class="filters__providers btn-glow">
+          <img class="btn-glow__a" src="assets/img/blur-filters-a.svg" alt="" />
+          <button class="field" type="button" aria-haspopup="listbox">
+            <img src="assets/icons/crown.svg" width="32" height="32" alt="" />
+            <span class="field__label">All providers</span>
+            <span class="ico field__chevron" style="--w:16px;--h:8px;--i:-6.25% -3.13%"><img src="assets/icons/chevron-providers.svg" alt="" /></span>
+          </button>
+        </div>
+
+        <div class="filters__tabs">
+          <a class="icon-btn icon-btn--search only-mobile" href="#" aria-label="Search"><img src="assets/icons/m-search.svg" width="27" height="27" alt="" /></a>
+          <div class="tabs" role="group" aria-label="Game lists">
+            <button class="tab" aria-pressed="false" type="button">
+              <img class="only-desktop" src="assets/icons/new.svg" width="32" height="32" alt="" /><img class="only-mobile" src="assets/icons/m-new.svg" width="24" height="24" alt="" />New
+            </button>
+            <button class="tab" aria-pressed="false" type="button">
+              <img class="only-desktop" src="assets/icons/top.svg" width="32" height="32" alt="" /><img class="only-mobile" src="assets/icons/m-top.svg" width="24" height="24" alt="" />Top
+            </button>
+            <button class="tab" aria-pressed="false" type="button">
+              <img class="only-desktop" src="assets/icons/favorites.svg" width="32" height="32" alt="" /><img class="only-mobile" src="assets/icons/m-favorites.svg" width="24" height="24" alt="" />Favorites
+            </button>
+          </div>
+        </div>
+
+        <div class="filters__search btn-glow">
+          <img class="btn-glow__a" src="assets/img/blur-filters-b.svg" alt="" />
+          <label class="field field--search">
+            <img src="assets/icons/search.svg" width="32" height="32" alt="" />
+            <input type="search" placeholder="Search..." aria-label="Search games" />
+            <button class="field__filter" type="button" aria-label="Sort and filter"><img src="assets/icons/filter.svg" width="24.4" height="18" alt="" /></button>
+          </label>
+        </div>
+      </div>
+
+      <!-- ============ Games grid (Figma: Games) ============ -->
+      <ul class="games">
+        <li class="game" data-title="Candy Corner"><img class="game__img" style="--pos:50% 0;--scale:1.1053" src="assets/games/candy-corner.png" alt="Candy Corner" loading="lazy" /></li>
+        <li class="game" data-title="Super Hot Chilli"><img class="game__img" style="--pos:50% 21.2%" src="assets/games/super-hot-chilli.png" alt="Super Hot Chilli" loading="lazy" /></li>
+        <li class="game" data-title="Bigger Bass Splash"><img class="game__img" style="--pos:50% 100%" src="assets/games/bigger-bass-splash.png" alt="Bigger Bass Splash" loading="lazy" /></li>
+        <li class="game" data-title="Elvis Frog" data-subtitle="True Ways" data-provider="BGaming"><img class="game__img" style="--pos:50% 100%" src="assets/games/elvis-frog.png" alt="Elvis Frog True Ways" loading="lazy" /></li>
+        <li class="game" data-title="Royal Fruits" data-subtitle="Multilines"><img class="game__img" style="--scale:1.2105" src="assets/games/royal-fruits.png" alt="Royal Fruits Multilines" loading="lazy" /></li>
+        <li class="game" data-title="Anubis Gold"><img class="game__img" src="assets/games/anubis-gold.png" alt="Anubis Gold" loading="lazy" /></li>
+        <li class="game" data-title="Book of Ra" data-subtitle="Deluxe"><img class="game__img" src="assets/games/book-of-ra.png" alt="Book of Ra Deluxe" loading="lazy" /></li>
+        <li class="game" data-title="20 Burning Hot"><img class="game__img" src="assets/games/20-burning-hot.png" alt="20 Burning Hot" loading="lazy" /></li>
+        <li class="game" data-title="Book of Dead" data-subtitle="Rich Wilde"><img class="game__img" src="assets/games/book-of-dead.png" alt="Rich Wilde and the Book of Dead" loading="lazy" /></li>
+        <li class="game" data-title="Dragon Gold 88"><img class="game__img" style="--pos:50% 30.4%" src="assets/games/dragon-gold-88.png" alt="Dragon Gold 88" loading="lazy" /></li>
+        <li class="game" data-title="Fluffy in Space"><img class="game__img" src="assets/games/fluffy-in-space.png" alt="Fluffy in Space" loading="lazy" /></li>
+        <li class="game" data-title="Super 3 Hot Chillies"><img class="game__img" src="assets/games/super-3-hot-chillies.png" alt="Super 3 Hot Chillies" loading="lazy" /></li>
+      </ul>
+    </main>
+  </div>
+
+  <!-- ============ Mobile bottom menu (Figma: Element - Menu Mobile) ============ -->
+  <nav class="mnav" aria-label="Quick navigation">
+    <div class="mnav__bar">
+      <a class="mnav__item" href="#"><img src="assets/icons/m-bonus.svg" width="24" height="24" alt="" /><span>Bonus</span><span class="count count--sm">3</span></a>
+      <a class="mnav__item" href="#"><img src="assets/icons/m-explore.svg" width="24" height="24" alt="" /><span>Explore</span></a>
+      <a class="mnav__item is-active" href="#" aria-current="page"><img class="mnav__line" src="assets/img/m-casino-line.svg" alt="" /><img src="assets/icons/m-casino.svg" width="24" height="24" alt="" /><span>Casino</span></a>
+      <a class="mnav__item" href="#"><img src="assets/icons/m-chat.svg" width="24" height="24" alt="" /><span>Chat</span></a>
+      <a class="mnav__item" href="#"><img src="assets/icons/m-live.svg" width="24" height="24" alt="" /><span>Live</span></a>
+    </div>
+  </nav>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
