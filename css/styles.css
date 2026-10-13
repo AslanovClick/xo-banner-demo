@@ -1030,7 +1030,7 @@ input:focus-visible,
     width: 100%;
     max-width: 480px;
     height: auto;
-    margin-inline: auto;
+    margin: 16px auto 0;       /* gap under the header (the video version is full-bleed) */
   }
   .hero--html .hero__viewport {
     border: 2px solid var(--blue-border);
@@ -1101,9 +1101,16 @@ input:focus-visible,
     right: 0;
     bottom: 0;
     display: block;
-    height: calc(84px + env(safe-area-inset-bottom));
-    background: #00060c;
+    height: calc(120px + env(safe-area-inset-bottom));
+    /* soft fade instead of a solid black strip; the bar keeps its own background */
+    background: linear-gradient(180deg,
+      rgba(0, 6, 12, 0) 0%,
+      rgba(0, 6, 12, .55) 35%,
+      rgba(0, 6, 12, .88) 70%,
+      #00060c 100%);
+    pointer-events: none;      /* the transparent part must not block taps on the cards */
   }
+  .mnav__bar { pointer-events: auto; }
   .mnav__bar {
     position: absolute;
     left: 50%;
